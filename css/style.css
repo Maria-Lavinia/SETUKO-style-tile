@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,800italic,400,800");
 /* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
 @import url("https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,37 +15,35 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
-  --link-color: green;
-  --link-hover-color: blue;
-  --color-4: hotpink;
-  --color-5: rebeccapurple;
+  --bg-color: #F2F2F2;
+  --link-color: #8C8C8C;
+  --link-hover-color: #595959;
+  --color-4: #262626;
+  --color-5: #8C837B;
 
-  --primary-font: "Open Sans", sans-serif;
-  --secondary-font: "Droid Serif", serif;
-  --main-text-color: #000;
+  --primary-font: 'Poppins', sans-serif;;
+  /* --secondary-font: "Droid Serif", serif; */
+  --main-text-color: #262626;
 
   --white-space: 1rem;
 }
 
-button {
-  transition: all 3s;
-}
+
 a {
   transition: all 3s;
 }
 button:hover {
   background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
 }
 
 button:active {
   background-color: var(--bg-color);
+  color: #262626;
 }
 
 a:hover {
   color: var(--link-hover-color);
-  font-size: 4rem;
+
 }
 html {
   font-size: 100%;
@@ -62,7 +61,9 @@ footer {
   max-width: 1300px;
   margin: 0 auto;
   padding: calc(2 * var(--white-space));
+
 }
+
 
 .full-width {
   background: var(--bg-color);
@@ -76,12 +77,12 @@ footer {
   letter-spacing: -2px;
   padding-right: 0.75em;
   font-weight: bold;
-  color: white;
+  color: #262626;
 }
 
 .header-wrapper h2 {
   font-size: 1.6em;
-  color: rgba(255, 255, 255, 0.95);
+  color:#262626;
   font-weight: bold;
   margin: var(--white-space) 0;
 }
@@ -89,10 +90,12 @@ footer {
 .header-wrapper h3 {
   font-size: 1.2rem;
   font-style: italic;
+  color:#262626;
 }
 
 .header-wrapper h4 {
   font-size: 0.8rem;
+  color:#262626;
 }
 
 main {
@@ -101,6 +104,9 @@ main {
 
 section {
   margin-bottom: calc(4 * var(--white-space));
+}
+footer{
+  color: #262626;
 }
 
 .section-heading {
@@ -152,19 +158,27 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(/imgLogos/Version\ 2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .texture-swatch-2 {
-  background: url(../img/subtle_grunge.png) top left repeat;
+  background: url(/imgLogos/Version\ 10.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .texture-swatch-1 {
-  background: url(../img/pw_maze_white.png) top left repeat;
+  background: url(/imgLogos/Version\ 12.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .texture-swatch-3 {
-  background: url(../img/white_paperboard.png) top left repeat;
+  background: url(/imgLogos/Version\ 13.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .images ul {
@@ -180,7 +194,7 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius: 4px;
+  border-radius:27px;
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
@@ -188,8 +202,6 @@ button {
   letter-spacing: 1px;
   color: white;
   text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
-  transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
 }
@@ -198,12 +210,12 @@ button {
   background: var(--color-5);
 }
 
-button:focus,
+/* button:focus,
 button:active,
 button:focus-within {
   outline: 0;
-  border-radius: 4px;
-}
+  border-radius: 50%;
+} */
 
 .typography-main {
   color: var(--main-text-color);
@@ -212,18 +224,20 @@ button:focus-within {
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
+  font-family: 'Poppins', sans-serif;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   font-style: italic;
   font-size: 1.25rem;
+  
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   line-height: 1.5;
-  max-width: 960px;
+  /* max-width: 960px; */
 }
 
 strong {
@@ -246,7 +260,7 @@ p[class*="font-details-"] {
   margin-top: 0.5rem;
   margin-bottom: calc(2 * var(--white-space));
   font-size: 0.75rem;
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   color: #6f6f6f;
 }
 
@@ -259,9 +273,6 @@ p[class*="font-details-"] {
   flex-direction: column;
 }
 
-footer {
-  font-style: italic;
-}
 
 @media (min-width: 800px) {
   main {
