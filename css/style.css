@@ -15,19 +15,18 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: #F2F2F2;
-  --link-color: #8C8C8C;
+  --bg-color: #f2f2f2;
+  --link-color: #8c8c8c;
   --link-hover-color: #595959;
   --color-4: #262626;
-  --color-5: #8C837B;
+  --color-5: #8c837b;
 
-  --primary-font: 'Poppins', sans-serif;;
+  --primary-font: "Poppins", sans-serif;
   /* --secondary-font: "Droid Serif", serif; */
   --main-text-color: #262626;
 
   --white-space: 1rem;
 }
-
 
 a {
   transition: all 3s;
@@ -43,7 +42,6 @@ button:active {
 
 a:hover {
   color: var(--link-hover-color);
-
 }
 html {
   font-size: 100%;
@@ -61,9 +59,7 @@ footer {
   max-width: 1300px;
   margin: 0 auto;
   padding: calc(2 * var(--white-space));
-
 }
-
 
 .full-width {
   background: var(--bg-color);
@@ -82,7 +78,7 @@ footer {
 
 .header-wrapper h2 {
   font-size: 1.6em;
-  color:#262626;
+  color: #262626;
   font-weight: bold;
   margin: var(--white-space) 0;
 }
@@ -90,12 +86,12 @@ footer {
 .header-wrapper h3 {
   font-size: 1.2rem;
   font-style: italic;
-  color:#262626;
+  color: #262626;
 }
 
 .header-wrapper h4 {
   font-size: 0.8rem;
-  color:#262626;
+  color: #262626;
 }
 
 main {
@@ -105,7 +101,7 @@ main {
 section {
   margin-bottom: calc(4 * var(--white-space));
 }
-footer{
+footer {
   color: #262626;
 }
 
@@ -158,25 +154,25 @@ ul li:last-child {
 }
 
 .texture-swatch-1 {
-  background: url(/imgLogos/Version\ 2.png);
+  background: url(../imgLogos/Version\ 2.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .texture-swatch-2 {
-  background: url(/imgLogos/Version\ 10.png);
+  background: url(../imgLogos/Version\ 10.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .texture-swatch-1 {
-  background: url(/imgLogos/Version\ 12.png);
+  background: url(../imgLogos/Version\ 12.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 .texture-swatch-3 {
-  background: url(/imgLogos/Version\ 13.png);
+  background: url(../imgLogos/Version\ 13.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -194,7 +190,7 @@ ul li:last-child {
 
 button {
   padding: 1rem;
-  border-radius:27px;
+  border-radius: 27px;
   background: var(--link-color);
   text-align: center;
   text-decoration: none;
@@ -224,14 +220,13 @@ button:focus-within {
 .h1-sample {
   font-size: 2.4rem;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .h2-sample {
   font-family: var(--primary-font);
   font-style: italic;
   font-size: 1.25rem;
-  
 }
 
 p.typography-sample {
@@ -272,7 +267,6 @@ p[class*="font-details-"] {
 .adjectives ul {
   flex-direction: column;
 }
-
 
 @media (min-width: 800px) {
   main {
